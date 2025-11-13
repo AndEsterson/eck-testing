@@ -7,3 +7,4 @@ elasticsearch:
 kibana:
   instanceName: logging
   version: 9.2.1
+  replicas: 3
