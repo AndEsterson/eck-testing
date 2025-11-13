@@ -1,0 +1,5 @@
+apiVersion: v2
+name: ai-pod-logging
+description: Stack for persisting pod logs
+version: 0.1.0
+appVersion: "1.0"

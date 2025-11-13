@@ -1,0 +1,9 @@
+elasticsearch:
+  instanceName: logging
+  authSecretName: elasticsearch-logging-auth
+  version: 9.2.1
+  replicas: 3
+
+kibana:
+  instanceName: logging
+  version: 9.2.1
