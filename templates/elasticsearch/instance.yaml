@@ -10,3 +10,5 @@ spec:
   nodeSets:
   - name: default
     count: {{ .Values.elasticsearch.replicas }}
+    config:
+      node.store.allow_mmap: false
