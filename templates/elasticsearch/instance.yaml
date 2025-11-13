@@ -1,12 +1,12 @@
 apiVersion: elasticsearch.k8s.elastic.co/v1
 kind: Elasticsearch
 metadata:
-  name: {{ elasticsearch.instanceName }}
+  name: {{ .Values.elasticsearch.instanceName }}
 spec:
-  version: {{ elasticsearch.version }}
+  version: {{ .Values.elasticsearch.version }}
   auth:
     fileRealm:
-    - secretName: {{ elasticsearch.authSecretName }}
+    - secretName: {{ .Values.elasticsearch.authSecretName }}
   nodeSets:
   - name: default
-    count: {{ elasticsearch.replicas }}
+    count: {{ .Values.elasticsearch.replicas }}
